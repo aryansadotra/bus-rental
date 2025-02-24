@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volvo B11R | Bus Dealership</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: white;
+        }
+
+        /* Header */
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00; /* Yellow accent */
+        }
+
+        /* Bus Details Section */
+        .bus-details {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Bus Image */
+        .bus-details img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.2);
+        }
+
+        /* Bus Title */
+        h2 {
+            color: #ffcc00; /* Luxury Bus Accent */
+            margin-top: 15px;
+        }
+
+        /* Features List */
+        .bus-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bus-details ul li {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ffcc00;
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background: #d4a600;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Volvo B11R</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buses.html">Buses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bus-details">
+            <img src="data:image/jpeg;base64,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" alt="2025 Volvo B11R Luxury Bus">
+            <h2>2025 Volvo B11R</h2>
+            <p>The <strong>Volvo B11R</strong> is a premium luxury bus designed for long-haul comfort and efficiency. It features a <strong>10.8L D11K engine</strong>, delivering <strong>430 HP</strong>, and offers an ultra-smooth ride with world-class safety features.</p>
+            
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Spacious 55-Seater with Reclining Seats</li>
+                <li>Fuel-Efficient 10.8L D11K Engine</li>
+                <li>Advanced Air Suspension System</li>
+                <li>State-of-the-Art Infotainment & AC</li>
+            </ul>
+            
+            <p><strong>Price:</strong> ₹ 1.80 Crore</p>
+            <a href="checkout.html" class="btn" role="button">RENT NOW</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bus Dealership | All Rights Reserved.</p>
+    </footer>
+</body> 
+</html>

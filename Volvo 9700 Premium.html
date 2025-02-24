@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volvo 9700 Premium | Bus Rentals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: white;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff6600;
+        }
+
+        .bus-details {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .bus-details img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.2);
+        }
+
+        h2 {
+            color: #ff4757;
+            margin-top: 15px;
+        }
+
+        .bus-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bus-details ul li {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ff4757;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background: #d90429;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Volvo 9700 Premium</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buses.html">Buses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bus-details">
+            <img src="data:image/jpeg;base64,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"
+                alt="Volvo 9700 Premium Luxury Bus">
+            <h2>2025 Volvo 9700 Premium</h2>
+            <p>The <strong>Volvo 9700 Premium</strong> is a luxury coach designed for long-distance travel with
+                **unmatched comfort and safety**. It features a <strong>13L, 460 HP engine</strong>, **ergonomic
+                reclining seats**, and an **advanced entertainment system** for a smooth journey.</p>
+
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Ergonomic Reclining Seats with Extra Legroom</li>
+                <li>Luxury Interiors with LED Mood Lighting</li>
+                <li>Onboard Entertainment System with WiFi</li>
+                <li>Fuel-Efficient & Low-Emission Engine</li>
+            </ul>
+
+            <p><strong>Rental Price:</strong> ₹ 15,000/day</p>
+            <a href="checkout.html" class="btn" role="button">Rent Now</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bus Rentals | Your Trusted Luxury Travel Partner 🚌</p>
+    </footer>
+</body>
+
+</html>

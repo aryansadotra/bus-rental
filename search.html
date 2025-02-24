@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Rental Search</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .search-container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .search-container h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .search-container label {
+            font-weight: bold;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .search-container input,
+        .search-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .search-container button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background-color: #ff6600;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .search-container button:hover {
+            background-color: #cc5200;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-container">
+        <h2>Find Your Rental Bus</h2>
+        <label for="pickup">Pickup Location</label>
+        <input type="text" id="pickup" placeholder="Enter pickup location">
+
+        <label for="dropoff">Drop-off Location</label>
+        <input type="text" id="dropoff" placeholder="Enter drop-off location">
+
+        <label for="date">Journey Date</label>
+        <input type="date" id="date">
+
+        <label for="passengers">Passengers</label>
+        <select id="passengers">
+            <option value="1">1 Passenger</option>
+            <option value="2">2 Passengers</option>
+            <option value="3">3 Passengers</option>
+            <option value="4">4 Passengers</option>
+            <option value="5">5+ Passengers</option>
+        </select>
+
+        <button type="submit">Search Bus</button>
+    </div>
+
+</body>
+</html>
